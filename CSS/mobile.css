@@ -3,6 +3,9 @@
         width: 26px;
         top: 100px;
     }
+    header{
+        margin: 0 30px;
+    }
     h1 {
         margin-top: 120px;
     }
