@@ -1,0 +1,34 @@
+@media (max-width: 1100px){
+    .icon-alura-header{
+        width: 26px;
+        top: 32px;
+    }
+    h1 {
+        margin-top: 120px;
+    }
+    .entradadedados{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .botoes-criptografia {
+        grid-row: 2;
+        flex-wrap: wrap;
+    }
+    textarea {
+        max-width: 100%;
+    }
+    .regra{
+        grid-row: 3;
+    }
+    .rodape{
+        margin: 0 30px;
+    }
+}
+@media (max-width: 600px){
+    .botao-secundario, .botao-primario{
+        max-width: 100%;
+        display: flex;
+        flex: 1;
+        place-content: center;
+    }
+}

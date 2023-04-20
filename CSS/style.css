@@ -50,7 +50,6 @@ textarea {
     transition: .2s;
     padding: 20px;
     display: flex;
-    place-content: end;
     max-width: 100%;
     resize:none;
 }
@@ -136,5 +135,5 @@ h2::before{
     max-width: 1400px;
     border-top: 1px solid #ffffff10;
     margin: 0 auto;
-    margin-top: 44px;
+    /* margin-top: 44px; */
 }
