@@ -17,6 +17,39 @@ main {
     max-width: 1400px;
     padding: 0 32px;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 18px 30px!important;
+    border-bottom: 1px solid #ffffff10;
+}
+h3{
+    color: white;
+    font-family: ibm plex mono;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+h3::before{
+    content: url('../imagens/vitordrumond.png');
+    margin-right: 12px;
+    vertical-align: center;
+}
+.github::before{
+    content: url('../imagens/github.svg');
+}
+.linkedin::before{
+    content: url('../imagens/linkedin.svg');
+}
+.behance::before{
+    content: url('../imagens/behance.svg');
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 h1 {
     font-family: ibm plex mono;
     line-height: 50px;
@@ -29,7 +62,7 @@ h1 {
 }
 .icon-alura-header{
     position: absolute;
-    top: 64px;
+    top: 100px;
 }
 p {
     font-family: dm sans;
@@ -52,6 +85,7 @@ textarea {
     display: flex;
     max-width: 100%;
     resize:none;
+    height: 200px;
 }
 textarea:hover{
     border: 2px solid #ffffff50
@@ -135,5 +169,4 @@ h2::before{
     max-width: 1400px;
     border-top: 1px solid #ffffff10;
     margin: 0 auto;
-    /* margin-top: 44px; */
 }
