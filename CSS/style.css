@@ -1,0 +1,140 @@
+body {
+    background: #131D2D;
+}
+body::after{
+    content: url('../imagens/luz-direita.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    mix-blend-mode: overlay;
+    z-index: -5;
+}
+
+main {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1400px;
+    padding: 0 32px;
+}
+h1 {
+    font-family: ibm plex mono;
+    line-height: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+.icon-alura-header{
+    position: absolute;
+    top: 64px;
+}
+p {
+    font-family: dm sans;
+    /* font-weight: 50; */
+    font-size: 1.5rem;
+    text-align: center;   
+    color: #fff;
+    opacity: 0.7;
+    font-weight: 400;
+}
+textarea {
+    background: #D9D9D910;
+    border: 2px solid transparent;
+    color: white;
+    font-family: dm sans;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    transition: .2s;
+    padding: 20px;
+    display: flex;
+    place-content: end;
+    max-width: 100%;
+    resize:none;
+}
+textarea:hover{
+    border: 2px solid #ffffff50
+}
+textarea::placeholder{
+    vertical-align: bottom;
+    color: #FFFFFF;
+    opacity: 0.3;
+    font-family: dm sans;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    /* padding: 20px; */
+}
+.entradadedados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 30px;
+    padding: 80px 0;
+}
+.botao-primario {
+    display: flex;
+    place-items: center;
+    background: white;
+    max-width: fit-content;
+    padding: 20px 56px;
+    font-family: dm sans;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+    color: black;
+}
+.botao-secundario {
+    display: flex;
+    place-items: center;
+    padding: 20px 56px;
+    color: white;
+    border: 1.5px solid white;
+    max-width: fit-content;
+    font-family: dm sans;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+    transition: 0.2s, background-position 0s;
+}
+.botao-secundario:hover{
+    background: #ffffff30;
+}
+.botoes-criptografia{
+    display: flex;
+    gap: 15px;
+}
+#copiar{
+    position: relative;
+}
+#copiar::after{
+    content: url('../imagens/copy.svg');
+    margin-left: 20px;
+}
+h2 {
+    display: flex;
+    place-items: center;
+    font-family: dm sans;
+    color: #ffffff50;
+    /* opacity: 0.5; */
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    position: relative;
+}
+h2::before{
+    content: url('../imagens/info.svg');
+    padding: 8px;
+    height: 1.6rem;
+}
+.rodape{
+    display: flex;
+    place-content: center;
+    padding: 47px 0;
+    max-width: 1400px;
+    border-top: 1px solid #ffffff10;
+    margin: 0 auto;
+    margin-top: 44px;
+}
