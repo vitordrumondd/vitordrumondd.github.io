@@ -45,7 +45,6 @@ navigator.permissions.query({name: "clipboard-write"}).then((result) => {
     
   }
 });
-
 // //funcao para copiar
 document.getElementById('copiar').addEventListener('click', function(){
   let copytext = document.getElementById('saida').value;
