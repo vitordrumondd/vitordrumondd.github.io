@@ -17,21 +17,30 @@ var cliqueDescriptogafar = botaoDescriptogafar.addEventListener('click', descrip
 
 //funcao que criptogafa
 function encriptar(){
-  var texto = entrada.value.replace(/e/igm, 'enter');
-  var texto = texto.replace(/a/igm, 'ai');
-  var texto = texto.replace(/o/igm, 'ober');
-  var texto = texto.replace(/u/igm, 'ufat');
-  saida.innerHTML = `${texto}`;
+  if(entrada.value != ''){
+    var texto = entrada.value.replace(/e/igm, 'enter');
+    var texto = texto.replace(/a/igm, 'ai');
+    var texto = texto.replace(/o/igm, 'ober');
+    var texto = texto.replace(/u/igm, 'ufat');
+    saida.innerHTML = `${texto}`;
+  } else if(entrada.value === ''){
+    alert('Você deve digitar o texto que deseja criptofrafar 😎')
+  }
 }
 
 //funcao que descriptogafa
 function descriptogafar(){
-  var texto = entrada.value.replace(/enter/igm, 'e');
-  var texto = texto.replace(/ai/igm, 'a');
-  var texto = texto.replace(/ober/igm, 'o');
-  var texto = texto.replace(/ufat/igm, 'u');
-  saida.innerHTML = `${texto}`;
-}
+  if(entrada.value != ''){
+    var texto = entrada.value.replace(/enter/igm, 'e');
+    var texto = texto.replace(/ai/igm, 'a');
+    var texto = texto.replace(/ober/igm, 'o');
+    var texto = texto.replace(/ufat/igm, 'u');
+    saida.innerHTML = `${texto}`;
+  } else if(entrada.value === ''){
+    alert("Você deve colar o texto que deseja decodificar")
+  }
+} 
+
 
 
 //checar permissao
@@ -45,6 +54,10 @@ navigator.permissions.query({name: "clipboard-write"}).then((result) => {
 document.getElementById('copiar').addEventListener('click', function(){
   let copytext = document.getElementById('saida').value;
   navigator.clipboard.writeText(copytext).then(() => {
-    console.log(copytext);
+    if(saida.value === ''){
+      alert('Não posso copiar um campo vazio 😢')
+    } else if(saida.value != '') {
+      alert('Texto copiado 🤘')
+    }
   })
 });
