@@ -27,7 +27,6 @@ function encriptar(){
     alert('Você deve digitar o texto que deseja criptofrafar 😎')
   }
 }
-
 //funcao que descriptogafa
 function descriptogafar(){
   if(entrada.value != ''){
@@ -40,16 +39,12 @@ function descriptogafar(){
     alert("Você deve colar o texto que deseja decodificar")
   }
 } 
-
-
-
 //checar permissao
 navigator.permissions.query({name: "clipboard-write"}).then((result) => {
   if (result.state === "granted" || result.state === "prompt") {
     
   }
 });
-
 // //funcao para copiar
 document.getElementById('copiar').addEventListener('click', function(){
   let copytext = document.getElementById('saida').value;
