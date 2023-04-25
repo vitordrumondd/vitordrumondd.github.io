@@ -36,7 +36,7 @@ function descriptogafar(){
     var texto = texto.replace(/ufat/igm, 'u');
     saida.innerHTML = `${texto}`;
   } else if(entrada.value === ''){
-    alert("Você deve colar o texto que deseja decodificar")
+    alert("Você deve colar o texto que deseja decodificar 👇")
   }
 } 
 //checar permissao
