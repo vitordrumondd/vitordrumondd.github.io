@@ -1,5 +1,9 @@
 body {
     background: #131D2D;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 0 32px;
 }
 body::after{
     content: url('../imagens/luz-direita.png');
@@ -12,17 +16,18 @@ body::after{
 
 main {
     margin: 0 auto;
+    width: 100%;
 }
 .container {
     max-width: 1400px;
-    padding: 0 32px;
+    margin: 0 32px;
 }
 header{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 18px 30px!important;
+    padding: 20px 0;
     border-bottom: 1px solid #ffffff10;
+    width: 100%;
 }
 h3{
     color: white;
@@ -165,7 +170,6 @@ h2::before{
     display: flex;
     place-content: center;
     padding: 47px 0;
-    max-width: 1400px;
     border-top: 1px solid #ffffff10;
-    margin: 0 auto;
+    width: 100%;
 }
